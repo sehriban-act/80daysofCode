@@ -1,0 +1,26 @@
+@import "config" , "nav";
+
+
+body{
+    background:$primary-color;
+    color:set-text-color($primary-color);
+    height: 100vh;
+    font-family:monospace;
+    line-height:1;
+    
+ 
+}
+h1{
+    font-weight:400;
+    // padding-top: ;
+}
+a, i{
+    color:set-text-color($primary-color);
+    text-decoration: none;
+    // @include transition-ease;
+}
+.nav{
+    border: 1px solid white;
+   padding-top:2em;
+   box-shadow:1px whitesmoke;
+}

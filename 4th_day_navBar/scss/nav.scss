@@ -1,0 +1,71 @@
+@import "config";
+
+.nav{
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+        height: 10vh;
+    background-color: white;
+    margin: auto;
+
+    h1{
+
+        text-shadow:0 1px #645555;
+        span{
+            color:$secondary-color;
+        }
+    }
+
+    .menu-nav{
+        display: flex;
+        flex-direction: row;
+        color:$primary-color
+
+        &__item{
+            display:inline;
+            padding-right:1rem;
+
+            &.active>a{
+                color:$secondary-color; 
+            }
+        }
+
+        &__link{
+            font-size:1rem;
+            text-transform:capitalize;
+            font-weight: 500;
+            @include transition-ease;
+
+            &:hover{
+                color:rgb(20, 106, 206);
+            }
+        }
+
+}
+.social-nav{
+    display: flex;
+flex-direction: row;
+
+&__item{
+    display:inline;
+    padding-right:1rem;
+
+    &.active>a{
+        color:$secondary-color; 
+    }
+}
+
+&i{
+    font-size:1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    @include transition-ease;
+
+    &:hover{
+        color:rgb(20, 106, 206);
+    }
+}
+
+}
+}

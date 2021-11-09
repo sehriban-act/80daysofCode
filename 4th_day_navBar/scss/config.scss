@@ -1,0 +1,12 @@
+$primary-color:#f1e9e9f5;
+$secondary-color:#2fbdff;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@mixin transition-ease{
+    transition:all 0.5s ease-in-out;
+}
